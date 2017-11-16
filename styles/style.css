@@ -1,0 +1,232 @@
+* {
+	font-family: 'Roboto', sans-serif;
+}
+
+body {
+	height: 100%;
+	min-height: 100vh;
+	width: 100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-flow: column nowrap;
+	flex-flow: column nowrap;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	background-color: #F0F0F0;
+
+}
+
+main {
+	width: 500px;
+	margin: 50px auto;
+	background-color: white;
+	border-radius: 10px;
+	padding: 30px;
+	-webkit-box-shadow: 5px 9px 28px 0 rgba(0, 0, 0, 0.2), 5px 11px 40px 0 rgba(0, 0, 0, 0.19);
+	box-shadow: 5px 9px 28px 0 rgba(0, 0, 0, 0.2), 5px 11px 40px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+#seacher {
+	width: 100%;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+}
+
+#inputUserName {
+	width: 75%;
+	padding: 10px;
+	border-radius: 3px;
+	color: black;
+	border: 1px solid lightgray;
+}
+
+::placeholder {
+	font-weight: bold;
+	color: #d9d9d9;
+}
+
+button {
+	width: 15%;
+	padding: 10px;
+	border-radius: 3px;
+	color: black;
+	border: 1px solid lightgray;
+	font-weight: bold;
+	background-color: background: white;
+	background: -webkit-gradient(linear, left top, left bottom, from(white), to(gainsboro));
+	background: linear-gradient(white, gainsboro);
+}
+
+button:hover {
+	cursor: pointer;
+	-webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+button:focus {
+	outline: none;
+}
+
+.userCard {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-flow: row nowrap;
+	flex-flow: row nowrap;
+	margin-top: 15px;
+
+}
+
+.avatar {
+	width: 80px;
+	height: 80px;
+	border-radius: 5px;
+}
+
+.userInfo {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-flow: column nowrap;
+	flex-flow: column nowrap;
+	margin-left: 15px;
+}
+
+.usernameA {
+	padding: 5px;
+	color: black;
+	text-decoration: none;
+	font-style: italic;
+	font-size: 14px;
+}
+
+.nameP {
+	font-size: 25px;
+	font-weight: 900;
+	padding: 5px;
+}
+
+.bioP {
+	font-size: 10px;
+	padding: 5px;
+}
+
+.titleDiv {
+	margin-top: 15px;
+	padding: 10px 0;
+	border-bottom: 2px solid black;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.repoIndex {
+	max-height: 260px;
+	overflow-y: scroll;
+
+}
+
+::-webkit-scrollbar {
+	width: 13px;
+}
+
+::-webkit-scrollbar-track {
+	background: #ffffff;
+	border-radius: 10px;
+	border: 1px solid #F0F0F0;
+}
+
+::-webkit-scrollbar-thumb {
+	background: -webkit-gradient(linear, left top, left bottom, from(white), to(gainsboro));
+	background: linear-gradient(white, gainsboro);
+	border-radius: 10px;
+	border: 1px solid #F0F0F0;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: gainsboro;
+}
+
+::-webkit-scrollbar-thumb:active {
+	background: gainsboro;
+}
+
+.eachRepo {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-flow: row nowrap;
+	flex-flow: row nowrap;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	max-width: 100%;
+	padding: 10px;
+	border-bottom: 1px solid lightgray;
+}
+
+.repoUrl {
+	font-weight: bold;
+	text-decoration: none;
+	color: black;
+
+}
+
+.iconsDiv,
+.star,
+.fork {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-flow: row nowrap;
+	flex-flow: row nowrap;
+	-ms-flex-pack: distribute;
+	justify-content: space-around;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	padding: 5px;
+}
+
+.repoIcon {
+	width: 15px;
+	height: 15px;
+}
+
+.repoNumber {
+	padding: 2px;
+	cursor: default;
+}
+
+#error {
+	background-color: #F9DEDE;
+	border: 1px solid #DCBFBF;
+	border-radius: 5px;
+	margin-top: 20px;
+	padding: 20px;
+
+}
+
+.errorText {
+	font-weight: bold;
+	color: #860d01;
+}
